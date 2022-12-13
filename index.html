@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>流星❤️</title>
+  
+  <style>
+       body{
+        background-color:black;
+       } 
+       span{
+        position:absolute;
+        top:30%;
+        left:40%;
+        font-size:50px;
+       }
+    
+  </style>
+  
+
+ 
+</head>
+
+<body>
+<div>
+
+</div>
+<span></span>
+  
+  <script>
+        
+        for(let i=0;i<50;i++){
+         let xin=document.createElement('span')
+        // xin.style.top=Math.round(Math.random()*100)+'%'
+         xin.style.left=Math.round(Math.random()*100)+'%'
+         xin.style.fontSize=Math.round(Math.random()*80)+'px'
+         xin.innerText='❤️'
+         document.body.appendChild(xin)
+        
+         let top=Math.round(Math.random()*100-100)
+
+       let i=top
+       setInterval(function(){
+         if(i>100){i=top}
+         i+=0.5
+         xin.style.top=i+'%' 
+         xin.innerText='❤️'
+
+      },20)       
+        }
+
+  </script>
+  
+</body>
+</html>
